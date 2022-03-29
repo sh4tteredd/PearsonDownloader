@@ -57,6 +57,7 @@ def main():
       os.startfile(pdfFile)
     else:                                   # linux distros
         subprocess.call(('xdg-open', pdfFile))
+        
 def get_files(_id, page, num,cookies,verbose):
     pb = f'https://plus.pearson.com/eplayer/pdfassets/prod1/{num}/{_id}/pages/page{page}?password=&accessToken=null&formMode=true'
     opener = request.build_opener()
