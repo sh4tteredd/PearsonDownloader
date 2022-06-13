@@ -27,8 +27,8 @@ def combine2Pdf(folderPath, pdfFilePath):
     output.save(pdfFilePath, "pdf", save_all=True, append_images=sources)
 
 def main():
-#    if os.path.exists("BooksCache/"):
-#       shutil.rmtree('BooksCache/', ignore_errors=True)
+    if os.path.exists("BooksCache/"):
+       shutil.rmtree('BooksCache/', ignore_errors=True)
     v = input("verbose (y/N): ")
     v = v.lower()
     if v == "y":
